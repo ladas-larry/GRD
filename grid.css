@@ -14,6 +14,7 @@
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
+    min-height: 1px;
 }
 
 .left { float: left; }
