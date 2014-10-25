@@ -1,0 +1,98 @@
+.row { padding: 0; }
+
+.row:before,
+.row:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+[class*=sm],
+[class*='md-'] {
+    float: left;
+    padding: 0 0.8em;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.left { float: left; }
+.right { float: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.sm-4 { width: 4%; }
+.sm-8 { width: 8%; }
+.sm-20 { width: 20%; }
+.sm-25 { width: 25%; }
+.sm-30 { width: 30%; }
+.sm-33 { width: 33%; }
+.sm-40 { width: 40%; }
+.sm-50 { width: 50%; }
+.sm-60 { width: 60%; }
+.sm-67 { width: 67%; }
+.sm-70 { width: 70%; }
+.sm-75 { width: 75%; }
+.sm-80 { width: 80%; }
+.sm-92 { width: 92%; }
+.sm-100 { width: 100%; }
+
+.sm-offset-4 { margin-left: 4%; }
+.sm-offset-8 { margin-left: 8%; }
+.sm-offset-10 { margin-left: 10%; }
+.sm-offset-20 { margin-left: 20%; }
+.sm-offset-25 { margin-left: 25%; }
+.sm-offset-30 { margin-left: 30%; }
+.sm-offset-33 { margin-left: 33%; }
+.sm-offset-40 { margin-left: 40%; }
+.sm-offset-50 { margin-left: 50%; }
+.sm-offset-60 { margin-left: 60%; }
+.sm-offset-67 { margin-left: 67%; }
+.sm-offset-70 { margin-left: 70%; }
+.sm-offset-75 { margin-left: 75%; }
+.sm-offset-80 { margin-left: 80%; }
+.sm-offset-100 { margin-left: 100%; }
+
+.show-md { display: none; }
+
+@media (min-width: 40em) { /* 40 × 16px = 640px */
+    .md-4 { width: 4%; }
+    .md-8 { width: 8%; }
+    .md-10 { width: 10%; }
+    .md-20 { width: 20%; }
+    .md-25 { width: 25%; }
+    .md-30 { width: 30%; }
+    .md-33 { width: 33%; }
+    .md-40 { width: 40%; }
+    .md-50 { width: 50%; }
+    .md-60 { width: 60%; }
+    .md-67 { width: 67%; }
+    .md-70 { width: 70%; }
+    .md-75 { width: 75%; }
+    .md-80 { width: 80%; }
+    .md-100 { width: 100%; }
+
+    .md-offset-4 { margin-left: 4%; }
+    .md-offset-8 { margin-left: 8%; }
+    .md-offset-10 { margin-left: 10%; }
+    .md-offset-20 { margin-left: 20%; }
+    .md-offset-25 { margin-left: 25%; }
+    .md-offset-30 { margin-left: 30%; }
+    .md-offset-33 { margin-left: 33%; }
+    .md-offset-40 { margin-left: 40%; }
+    .md-offset-50 { margin-left: 50%; }
+    .md-offset-60 { margin-left: 60%; }
+    .md-offset-67 { margin-left: 67%; }
+    .md-offset-70 { margin-left: 70%; }
+    .md-offset-75 { margin-left: 75% }
+    .md-offset-80 { margin-left: 80%; }
+    .md-offset-100 { margin-left: 100%; }
+
+    .md-text-left { text-align: left; }
+    .md-text-center { text-align: center; }
+    .md-text-right { text-align: right; }
+
+    .show-md { display: block; }
+    .hide-md { display: none; }
+}
