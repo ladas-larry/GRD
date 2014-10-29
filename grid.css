@@ -1,6 +1,8 @@
+html { line-height: 160%; }
+
 .row { padding: 0; }
 
-/*-- clearfix hack -- */
+/*-- clearfix hack --*/
 /* to make sure everything inside the row stays inside the row */
 .row:before,
 .row:after {
@@ -9,8 +11,8 @@
     content: '';
 }
 
-/*-- column -- */
-/* using flow property for positioning  */
+/*-- column --*/
+/* using flow property for positioning */
 
 [class*=sm],
 [class*=md] {
@@ -25,18 +27,11 @@
 }
 
 
-/*-- support for nested grids -- */
-/* reset of the column's padding after putting a row inside  */
-.row  .row{
-    margin: 0 -0.8em;
-}
+/*-- support for nested grids --*/
+/* reset of the column's padding after putting a row inside */
+.row .row { margin: 0 -0.8em; }
 
-
-
-
-[class*=md] {
-    width: 100%;
-}
+[class*=md] { width: 100%; }
 
 .left { float: left; }
 .right { float: right; }
@@ -105,4 +100,6 @@
 
     .show-md { display: block; }
     .hide-md { display: none; }
+
+    [class*=md] { line-height: 145%; }
 }
