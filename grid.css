@@ -1,5 +1,3 @@
-html { line-height: 160%; }
-
 .row { padding: 0; }
 
 /*-- clearfix hack --*/
@@ -30,6 +28,10 @@ html { line-height: 160%; }
 /*-- support for nested grids --*/
 /* reset of the column's padding after putting a row inside */
 .row .row { margin: 0 -0.8em; }
+
+
+/*-- default viewport -- */
+/* for all mobile-devices, suppose they are phones */
 
 [class*=md] { width: 100%; }
 
@@ -100,6 +102,4 @@ html { line-height: 160%; }
 
     .show-md { display: block; }
     .hide-md { display: none; }
-
-    [class*=md] { line-height: 145%; }
 }

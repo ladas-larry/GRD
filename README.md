@@ -15,7 +15,7 @@ Ok, responsive webdesign is great, but it’s not a silver bullet. Moreover what
 ##How to use it
 
 
-You can see sample here. 
+You can see sample [here](http://dharmoslap.github.io/Singular-Grid/). 
 
 
 Columns are defined with `sm-*` classes, and as this is mobile-first grid, `sm-*` definitions are not conditioned by any media-query. 
