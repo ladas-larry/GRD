@@ -1,5 +1,3 @@
-html { line-height: 160%; }
-
 .row { padding: 0; }
 
 /*-- clearfix hack --*/
@@ -21,15 +19,18 @@ html { line-height: 160%; }
     vertical-align: top;
     box-sizing: border-box;
     min-height: 1px;
-    padding: 0 0.8em;
-    /* optional gutter
-    padding: 12px;*/
+}
+
+/*-- optional gutter --*/
+[class*=sm] p,
+[class*=md] p{
+    margin: 0 0.8em;
 }
 
 
-/*-- support for nested grids --*/
-/* reset of the column's padding after putting a row inside */
-.row .row { margin: 0 -0.8em; }
+
+/*-- default viewport -- */
+/* for all mobile-devices, suppose they are phones */
 
 [class*=md] { width: 100%; }
 
@@ -100,6 +101,4 @@ html { line-height: 160%; }
 
     .show-md { display: block; }
     .hide-md { display: none; }
-
-    [class*=md] { line-height: 145%; }
 }
