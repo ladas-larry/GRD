@@ -29,4 +29,4 @@ For tablets there is a media-query, that triggers `md-*` definitions on screens 
 
 **Gutters**
 
-Each column has an optional gutters. You can activate gutters by the insertion of a wrapping `<p>` around the column's content.
+Each column has an optional gutter padding. You can activate gutters by the insertion of a wrapping `<p>` around the column's content.
