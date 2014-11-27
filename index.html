@@ -23,33 +23,30 @@
         header{
             text-align: center;
         }
-
         [class*=sm],
-        [class*=md] {
+        [class*=md]{
             text-align: center;
-            outline: 2px solid rgb(95, 225, 152);
+            outline: 1px solid rgb(95, 225, 152);
             background: #7F8C8D;
             padding: 6px 0 10px 0;
         }
-        /*.gutters [class*=sm]:after,
-        .gutters [class*=md]:after {
-            background-color: grey;
-            content: '';
-            display: block;
-            position: absolute;
-            top: 1px;
-            left: 0.8em;
-            right: 0.8em;
-            bottom: 1px;
-            z-index: -1;
-        }*/
+        .gutters [class*=sm],
+        .gutters [class*=md],
+        .gutter{
+            border-left: 0.8em solid rgb(120, 120, 120);
+            border-right: 0.8em solid rgb(120, 120, 120);
+        }
 
+        .no-gutter{
+            border-left: 0;
+            border-right: 0;
+        }
         .desc{
             max-width: 800px;
 padding: 0 20px;
 text-align: center;
 margin: 1.5em auto;
-color: #7f8c8d;
+color: #879596;
 }
 .sub{
 font-size: 1.2em;
@@ -61,26 +58,26 @@ font-size: 1.2em;
     </style>
 </head>
 
-<body>
+<body class="gutters">
 <header>
     <svg width="220" height="180">
-        <rect x="0" y="0" width="220" height="20" style="stroke:#292929;stroke-width:2;" />
-        <rect x="0" y="30" width="150" height="20" style="stroke:#292929;stroke-width:2;" />
-        <rect x="180" y="30" width="40" height="20" style="stroke:#292929;stroke-width:2;" />
-        <rect x="0" y="60" width="220" height="20" style="stroke:#292929;stroke-width:2;" />
-        <rect x="0" y="90" width="220" height="20" style="stroke:#292929;stroke-width:2;" />
-        <rect x="0" y="120" width="220" height="20" style="stroke:#292929;stroke-width:2;" />
+        <rect x="0" y="0" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="30" width="150" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="180" y="30" width="40" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="60" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="90" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="120" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
     </svg>
-    <h1>Sigular Grid</h1>
+    <h1>GRD</h1>
 
-    <p class="sub">Lightweight Mobile-first CSS grid.</p>
+    <p class="sub">Lightweight Mobile-first CSS grid</p>
 
     <p class="desc">Made in belief, that mobile web should have it's own dedicated layout and shouldn't be mixed with bloated desktop markup and resources.</p>
 </header>
 
 
 <p class="buttons">
-            <a href="https://github.com/Dharmoslap/Singular-Grid" target="_blank" class="button">Source on GitHub</a>
+            <a href="https://github.com/Dharmoslap/GRD" target="_blank" class="button">Source on GitHub</a>
         </p>
 
 
@@ -88,19 +85,19 @@ font-size: 1.2em;
 <a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Example</a>
 
 
-<div class="row gutters">
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
+<div class="row">
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
 </div>
 <div class="row">
     <div class="sm-2"> sm-2<br> 16,6%</div>

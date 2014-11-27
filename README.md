@@ -1,7 +1,7 @@
-Singular-Grid
+GRD
 =============
 
-Lightweight Mobile-first responsive CSS grid.
+Lightweight Mobile-first CSS grid.
 
 
 Made in belief, that mobile web should have it's own dedicated layout and shouldn't be mixed with bloated desktop markup and resources.
@@ -19,14 +19,16 @@ You can see sample [here](http://dharmoslap.github.io/Singular-Grid/).
 
 **Mobile**
 
-Columns are defined with `sm-*` classes.
+Columns are defined with `.sm-*` classes.
 
-As this is mobile-first grid, `sm-*` definitions are not conditioned by any media-query.
+As this is mobile-first grid, `.sm-*` definitions are not conditioned by any media-query.
 
 **Tablet**
 
-For tablets there is a media-query, that triggers `md-*` definitions on screens > 640px.
+For tablets there is a media-query, that triggers `.md-*` definitions on screens > 640px.
 
 **Gutters**
 
-Each column has an optional gutter padding. You can activate gutters by the insertion of a wrapping `<p>` around the column's content.
+You can activate gutters by adding a `.gutters` class to <body> element or to specific `<div>` which represents one row.
+
+Furthermore you can add `.gutter` or `.no-gutter` classes to just one column in the case you would like to gutters just for certain columns, or vice versa.  

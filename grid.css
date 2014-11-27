@@ -26,13 +26,11 @@
 
 .gutters [class*=sm],
 .gutters [class*=md],
-[class*=sm].gutter,
-[class*=md].gutter{
+.gutter {
     padding: 0 0.8em;
 }
 
-[class*=sm].no-gutter,
-[class*=md].no-gutter{
+.no-gutter{
     padding: 0;
 }
 
