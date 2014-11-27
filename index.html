@@ -31,6 +31,19 @@
             background: #7F8C8D;
             padding: 6px 0 10px 0;
         }
+        /*.gutters [class*=sm]:after,
+        .gutters [class*=md]:after {
+            background-color: grey;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1px;
+            left: 0.8em;
+            right: 0.8em;
+            bottom: 1px;
+            z-index: -1;
+        }*/
+
         .desc{
             max-width: 800px;
 padding: 0 20px;
@@ -75,7 +88,7 @@ font-size: 1.2em;
 <a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Example</a>
 
 
-<div class="row">
+<div class="row gutters">
     <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
     <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
     <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
