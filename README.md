@@ -15,13 +15,12 @@ Tablet version. Shouldn't be user free to resize browser window and still get th
 ##How to use it
 
 
-You can find a sample [here](http://dharmoslap.github.io/Singular-Grid/).
+You can find a sample [here](http://dharmoslap.github.io/Singular-Grid/). Go and inspect elements on your own. And don't forget to resize.
 
 ###Smartphones
 
 Columns are defined with `.sm-*` classes.
-These columns are not conditioned by any media-query.
-So these columns will be displayed as default layout.
+These columns are not conditioned by any media-query and they will be displayed as default layout.
 
 Why is there no such thing as media-query?
 This is mobile-first and we will take this decision as an real advantage.
@@ -32,7 +31,7 @@ For tablets there is a media-query.
 So on screens that are wider than 640px, grid starts to display `.md-*` columns.
 
 But if you don't specify the tablet columns, the grid will still use the smartphone definitions.
-So use tablet columns for the cases, when you want reshape default smartphone layout.
+So use tablet columns in the cases, when you want reshape default smartphone layout.
 
 
 ###Gutters
@@ -42,11 +41,9 @@ You can activate gutters by adding a `.gutters` class to <body> element or to sp
 Furthermore you can add `.gutter` or `.no-gutter` classes to just one column in the case you would like to gutters just for certain columns, or vice versa.  
 
 
-##Why to use it?
+##Why to use it
 
-GRD strives for clarity, maintainbility and compatibility.
-
-Ordnung muss sein!
+GRD strives for clarity, maintainbility and compatibility. Ordnung muss sein!
 
 
 ##License
