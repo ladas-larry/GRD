@@ -21,12 +21,18 @@
     min-height: 1px;
 }
 
-/*-- optional gutter --*/
-[class*=sm] p,
-[class*=md] p{
-    margin: 0 0.8em;
+
+/*-- gutter --*/
+
+.gutters [class*=sm],
+.gutters [class*=md],
+.gutter {
+    padding: 0 0.8em;
 }
 
+.no-gutter{
+    padding: 0;
+}
 
 
 /*-- default viewport -- */

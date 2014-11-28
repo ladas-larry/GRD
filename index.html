@@ -9,60 +9,95 @@
             font-family: 'Open Sans', sans-serif;
             background: rgb(46, 64, 82);
             color: rgb(255, 255, 255);
+            padding: 60px 80px;
+        }
+        a, a:hover, a:visited{
+            color:  rgb(95, 225, 152);
         }
         h1, p {
             text-align: center;
         }
-        [class*=sm],
-        [class*=md] {
-            text-align: center;
-            outline: 2px solid #3BA777;
-            background: #7F8C8D;
+        h2{
+            display: inline-block;
         }
-        .desc{max-width: 800px;
+        header{
+            text-align: center;
+        }
+        [class*=sm],
+        [class*=md]{
+            text-align: center;
+            outline: 1px solid rgb(95, 225, 152);
+            background: #7F8C8D;
+            padding: 6px 0 10px 0;
+        }
+        .gutters [class*=sm],
+        .gutters [class*=md],
+        .gutter{
+            border-left: 0.8em solid rgb(120, 120, 120);
+            border-right: 0.8em solid rgb(120, 120, 120);
+        }
+
+        .no-gutter{
+            border-left: 0;
+            border-right: 0;
+        }
+        .desc{
+            max-width: 800px;
 padding: 0 20px;
 text-align: center;
 margin: 1.5em auto;
-color: #7f8c8d;
+color: #879596;
 }
 .sub{
 font-size: 1.2em;
 }
+.external-link{
+    font-size:85%;
+    margin: 0 15px;
+}
     </style>
 </head>
 
-<body>
+<body class="gutters">
 <header>
-    <h1>Sigular Grid</h1>
+    <svg width="220" height="180">
+        <rect x="0" y="0" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="30" width="150" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="180" y="30" width="40" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="60" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="90" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+        <rect x="0" y="120" width="220" height="20" style="stroke:#292929;stroke-width:2;fill: white;" />
+    </svg>
+    <h1>GRD</h1>
 
-    <p class="sub">Lightweight Mobile-first responsive CSS grid.</p>
+    <p class="sub">Lightweight Mobile-first CSS grid</p>
 
     <p class="desc">Made in belief, that mobile web should have it's own dedicated layout and shouldn't be mixed with bloated desktop markup and resources.</p>
 </header>
 
 
 <p class="buttons">
-            <a href="/guide/installation.html" class="button">Get Vue.js v0.11.0</a>
-            <a href="https://github.com/yyx990803/vue" target="_blank" class="button">Source on GitHub</a>
+            <a href="https://github.com/Dharmoslap/GRD" target="_blank" class="button">Source on GitHub</a>
         </p>
 
+
 <h2>Small screen</h2>
-<a href="#" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Bare example</a>
+<a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Example</a>
 
 
 <div class="row">
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
-    <div class="sm-1"> <p>sm-1<br> 8,3%</p></div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
+    <div class="sm-1"> sm-1<br> 8,3%</div>
 </div>
 <div class="row">
     <div class="sm-2"> sm-2<br> 16,6%</div>
@@ -80,76 +115,58 @@ font-size: 1.2em;
 </div>
 
 <div class="row">
-    <div class="sm-4"> sm-4: 33,3%</div>
-    <div class="sm-4"> sm-4: 33,3%</div>
-    <div class="sm-4"> sm-4: 33,3%</div>
+    <div class="sm-4"> sm-4<br> 33,3%</div>
+    <div class="sm-4"> sm-4<br> 33,3%</div>
+    <div class="sm-4"> sm-4<br> 33,3%</div>
 </div>
 
 <div class="row">
-    <div class="sm-6"> sm-6: 50%</div>
-    <div class="sm-6"> sm-6: 50%</div>
+    <div class="sm-6"> sm-6<br> 50%</div>
+    <div class="sm-6"> sm-6<br> 50%</div>
 </div>
+
 
 <h2>Medium screen</h2>
-<a href="#" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=768,width=1024'); return false;">Bare example</a>
+<a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=768,width=1024'); return false;">Example</a>
 <div class="row">
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
-    <div class="md-1"> Tablet 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
+    <div class="md-1"> md-1<br> 8,3%</div>
 </div>
 <div class="row">
-    <div class="md-2"> Tablet 16,6%</div>
-    <div class="md-2"> Tablet 16,6%</div>
-    <div class="md-2"> Tablet 16,6%</div>
-    <div class="md-2"> Tablet 16,6%</div>
-    <div class="md-2"> Tablet 16,6%</div>
-    <div class="md-2"> Tablet 16,6%</div>
+    <div class="md-2"> md-2<br> 16,6%</div>
+    <div class="md-2"> md-2<br> 16,6%</div>
+    <div class="md-2"> md-2<br> 16,6%</div>
+    <div class="md-2"> md-2<br> 16,6%</div>
+    <div class="md-2"> md-2<br> 16,6%</div>
+    <div class="md-2"> md-2<br> 16,6%</div>
 </div>
 <div class="row">
-    <div class="md-3"> Tablet 25%</div>
-    <div class="md-3"> Tablet 25%</div>
-    <div class="md-3"> Tablet 25%</div>
-    <div class="md-3"> Tablet 25%</div>
-</div>
-
-<div class="row">
-    <div class="md-4"> Tablet 33,3%</div>
-    <div class="md-4"> Tablet 33,3%</div>
-    <div class="md-4"> Tablet 33,3%</div>
+    <div class="md-3"> md-3<br> 25%</div>
+    <div class="md-3"> md-3<br> 25%</div>
+    <div class="md-3"> md-3<br> 25%</div>
+    <div class="md-3"> md-3<br> 25%</div>
 </div>
 
 <div class="row">
-    <div class="md-6"> Tablet 50%</div>
-    <div class="md-6"> Tablet 50%</div>
+    <div class="md-4"> md-4<br> 33,3%</div>
+    <div class="md-4"> md-4<br> 33,3%</div>
+    <div class="md-4"> md-4<br> 33,3%</div>
 </div>
 
-<!--<h2>Nesting</h2>
-
 <div class="row">
-    <div class="sm-6"> Phone 50%
-        <div class="row">
-            <div class="sm-6"> Phone 50%</div>
-            <div class="sm-6"> Phone 50%</div>
-        </div>
-    </div>
-    <div class="sm-6"> Phone 50%
-        <div class="row">
-            <div class="sm-6"> Phone 50%</div>
-            <div class="sm-6"> Phone 50%</div>
-        </div>
-    </div>
-</div>-->
-
-<h2>Source</h2>
+    <div class="md-6"> md-6<br> 50%</div>
+    <div class="md-6"> md-6<br> 50%</div>
+</div>
 
 </body>
 </html>
