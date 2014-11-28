@@ -32,7 +32,7 @@ For tablets there is a media-query.
 So on screens that are wider than 640px, grid starts to display `.md-*` columns.
 
 But if you don't specify the tablet columns, the grid will still use the smartphone definitions.
-So use `.md-*` classes for the cases, when you want reshape default smartphone layout.
+So use tablet columns for the cases, when you want reshape default smartphone layout.
 
 
 ###Gutters
