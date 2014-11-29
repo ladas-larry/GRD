@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://rawgit.com/Dharmoslap/Singular-Grid/master/grid.css">
+    <link rel="stylesheet" href="https://rawgit.com/Dharmoslap/GRD/master/grid.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin">
     <style>
@@ -32,12 +32,35 @@
             outline: 1px solid rgb(95, 225, 152);
             background: #7F8C8D;
             padding: 6px 0 10px 0;
+            /*font-size: 1.35vw;*/
+            padding-top:10px !important;
+            padding-bottom:10px !important;
+
         }
         .gutters [class*=sm],
         .gutters [class*=md],
         .gutter{
             border-left: 0.8em solid rgb(120, 120, 120);
             border-right: 0.8em solid rgb(120, 120, 120);
+        }
+
+        [class*="1"]{
+            font-size: 1.8vmin;
+        }
+
+        [class*="2"],
+        [class*="3"]{
+            font-size: 2.4vmin;
+        }
+
+        [class*="4"],
+        [class*="5"],
+        [class*="6"]{
+            font-size: 3vmin;
+        }
+
+        [class*="12"]{
+            font-size: 3.6vmin;
         }
 
         .no-gutter{
@@ -57,6 +80,17 @@ font-size: 1.2em;
 .external-link{
     font-size:85%;
     margin: 0 15px;
+}
+pre {
+    background: #18222B;
+    padding: 6px;
+    border-radius: 3px;
+    word-break: break-all; /* webkit */
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: -moz-pre-wrap; /* fennec */
+    white-space: pre-wrap;
+    white-space: pre\9; /* IE7+ */
 }
     </style>
 </head>
@@ -82,10 +116,11 @@ font-size: 1.2em;
 <p class="buttons">
             <a href="https://github.com/Dharmoslap/GRD" target="_blank" class="button">Source on GitHub</a>
         </p>
-
+<br>
+        <pre>&lt;link rel="stylesheet" href="https://rawgit.com/Dharmoslap/GRD/master/grid.css"&gt;</pre>
 
 <h2>Small screen</h2>
-<a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Example</a>
+<a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Device window</a>
 
 
 <div class="row">
@@ -128,9 +163,13 @@ font-size: 1.2em;
     <div class="sm-6"> sm-6<br> 50%</div>
 </div>
 
+<div class="row">
+    <div class="sm-12"> sm-12<br> 100%</div>
+</div>
 
+<br><br>
 <h2>Medium screen</h2>
-<a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=768,width=1024'); return false;">Example</a>
+<a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=768,width=1024'); return false;">Device window</a>
 <div class="row">
     <div class="md-1"> md-1<br> 8,3%</div>
     <div class="md-1"> md-1<br> 8,3%</div>
@@ -171,5 +210,118 @@ font-size: 1.2em;
     <div class="md-6"> md-6<br> 50%</div>
 </div>
 
+<div class="row">
+    <div class="md-12"> md-12<br> 100%</div>
+</div>
+
+
+<br><br>
+<h2>Source</h2>
+
+    <pre>
+.row { padding: 0; }
+
+.row:before,
+.row:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+[class*=sm],
+[class*=md] {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    min-height: 1px;
+}
+
+.sm-1 { width: 8.333%; }
+.sm-2 { width: 16.666%; }
+.sm-3 { width: 24.999%; }
+.sm-4 { width: 33.333%; }
+.sm-5 { width: 41.666%; }
+.sm-6 { width: 49.999%; }
+.sm-7 { width: 58.333%; }
+.sm-8 { width: 66.666%; }
+.sm-9 { width: 74.999%; }
+.sm-10 { width: 83.333%; }
+.sm-11 { width: 91.666%; }
+.sm-12 { width: 99.999%; }
+
+.sm-offset-1 { margin-left: 8.333%; }
+.sm-offset-2 { margin-left: 16.666%; }
+.sm-offset-3 { margin-left: 24.999%; }
+.sm-offset-4 { margin-left: 33.333%; }
+.sm-offset-5 { margin-left: 41.666%; }
+.sm-offset-6 { margin-left: 49.999%; }
+.sm-offset-7 { margin-left: 58.333%; }
+.sm-offset-8 { margin-left: 66.666%; }
+.sm-offset-9 { margin-left: 74.999%; }
+.sm-offset-10 { margin-left: 83.333%; }
+.sm-offset-11 { margin-left: 91.666%; }
+
+[class*=md] { width: 100%; }
+
+.hide-sm { display: none; }
+.show-md { display: none; }
+
+@media (min-width: 40em) {
+    .md-1 { width: 8.333%; }
+    .md-2 { width: 16.666%; }
+    .md-3 { width: 24.999%; }
+    .md-4 { width: 33.333%; }
+    .md-5 { width: 41.666%; }
+    .md-6 { width: 49.999%; }
+    .md-7 { width: 58.333%; }
+    .md-8 { width: 66.666%; }
+    .md-9 { width: 74.999%; }
+    .md-10 { width: 83.333%; }
+    .md-11 { width: 91.666%; }
+    .md-12 { width: 99.999%; }
+
+    .md-offset-1 { margin-left: 8.333%; }
+    .md-offset-2 { margin-left: 16.666%; }
+    .md-offset-3 { margin-left: 24.999%; }
+    .md-offset-4 { margin-left: 33.333%; }
+    .md-offset-5 { margin-left: 41.666%; }
+    .md-offset-6 { margin-left: 49.999%; }
+    .md-offset-7 { margin-left: 58.333%; }
+    .md-offset-8 { margin-left: 66.666%; }
+    .md-offset-9 { margin-left: 74.999%; }
+    .md-offset-10 { margin-left: 83.333%; }
+    .md-offset-11 { margin-left: 91.666%; }
+
+    .md-text-left { text-align: left; }
+    .md-text-center { text-align: center; }
+    .md-text-right { text-align: right; }
+
+    .show-md { display: block; }
+    .hide-md { display: none; }
+    .show-sm { display: none; }
+}
+
+.gutters [class*=sm],
+.gutters [class*=md],
+.gutter {
+    padding: 0 0.8em;
+}
+
+.no-gutter{
+    padding: 0;
+}
+
+
+.left { float: left; }
+.right { float: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+</pre>
+
+<br><br>
+
+<p>Made in Berlin</p>
 </body>
 </html>

@@ -1,13 +1,16 @@
 .row { padding: 0; }
 
+
 /*-- clearfix hack --*/
 /* to make sure everything inside the row stays inside the row */
+
 .row:before,
 .row:after {
     display: table;
     clear: both;
     content: '';
 }
+
 
 /*-- column --*/
 /* using flow property for positioning */
@@ -22,29 +25,8 @@
 }
 
 
-/*-- gutter --*/
-
-.gutters [class*=sm],
-.gutters [class*=md],
-.gutter {
-    padding: 0 0.8em;
-}
-
-.no-gutter{
-    padding: 0;
-}
-
-
 /*-- default viewport -- */
-/* for all mobile-devices, suppose they are phones */
-
-[class*=md] { width: 100%; }
-
-.left { float: left; }
-.right { float: right; }
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+/* for all mobile devices, suppose they are phones */
 
 .sm-1 { width: 8.333%; }
 .sm-2 { width: 16.666%; }
@@ -71,10 +53,15 @@
 .sm-offset-10 { margin-left: 83.333%; }
 .sm-offset-11 { margin-left: 91.666%; }
 
+[class*=md] { width: 100%; }
+
+.hide-sm { display: none; }
 .show-md { display: none; }
+
 
 /*-- tablet viewport -- */
 /* for screens wider than 40 × 16px = 640px */
+
 @media (min-width: 40em) {
     .md-1 { width: 8.333%; }
     .md-2 { width: 16.666%; }
@@ -107,4 +94,27 @@
 
     .show-md { display: block; }
     .hide-md { display: none; }
+    .show-sm { display: none; }
 }
+
+
+/*-- gutter --*/
+
+.gutters [class*=sm],
+.gutters [class*=md],
+.gutter {
+    padding: 0 0.8em;
+}
+
+.no-gutter{
+    padding: 0;
+}
+
+
+/*-- helpers --*/
+
+.left { float: left; }
+.right { float: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
