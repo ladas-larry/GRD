@@ -46,7 +46,7 @@ If you need to create some whitespace in the grid, you can just add `sm-offset-*
 
 ##Why to use it
 
-GRD strives for clarity and maintainbility . Ordnung muss sein.
+GRD strives for clarity and maintainbility. Ordnung muss sein.
 
 
 ##License
