@@ -14,7 +14,7 @@ Tablet version. Shouldn't be user free to resize browser window and still get th
 
 ``<link rel="stylesheet" href="https://rawgit.com/Dharmoslap/GRD/master/grid.css">``
 
-You can find a sample [here](http://dharmoslap.github.io/Singular-Grid/). Go and inspect elements on your own, and don't forget to resize.
+You can find a sample [here](http://dharmoslap.github.io/GRD/). Go and inspect elements on your own, and don't forget to resize.
 
 ###1. Smartphones
 
