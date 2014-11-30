@@ -39,8 +39,9 @@ You can activate gutters by adding a `.gutters` class to <body> element or to sp
 
 Furthermore you can add `.gutter` or `.no-gutter` classes to just one column in the case you would like to gutters just for certain columns, or vice versa.  
 
-###4. Helpers
+###4. Offsets
 
+If you need to create some whitespace in the grid, you can just add `sm-offset-*` or `md-offset-*` classes to the column, needs to have a free space on the left side.
 
 
 ##Why to use it

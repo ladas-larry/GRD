@@ -81,8 +81,12 @@ font-size: 1.2em;
     font-size:85%;
     margin: 0 15px;
 }
+
+
 pre {
+    display: inline-block;
     background: #18222B;
+    text-align:left;
     padding: 6px;
     border-radius: 3px;
     word-break: break-all; /* webkit */
@@ -117,7 +121,9 @@ pre {
             <a href="https://github.com/Dharmoslap/GRD" target="_blank" class="button">Source on GitHub</a>
         </p>
 <br>
-        <pre>&lt;link rel="stylesheet" href="https://rawgit.com/Dharmoslap/GRD/master/grid.css"&gt;</pre>
+<div class="text-center">
+     <pre>&lt;link rel="stylesheet" href="https://rawgit.com/Dharmoslap/GRD/master/grid.css"&gt;</pre>
+ </div>
 
 <h2>Small screen</h2>
 <a href="#" class="external-link" onClick="window.open('file:///Volumes/Workspace/Github/Singular-Grid/sample.html','Singular Grid','resizable,height=480,width=320'); return false;">Device window</a>
@@ -218,7 +224,8 @@ pre {
 <br><br>
 <h2>Source</h2>
 
-    <pre>
+
+    <pre style="padding-right:40px;display:block">
 .row { padding: 0; }
 
 .row:before,
