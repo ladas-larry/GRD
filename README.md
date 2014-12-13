@@ -16,7 +16,7 @@ Tablet version. Shouldn't be user free to resize browser window and still get th
 
 You can find a sample [here](http://dharmoslap.github.io/GRD/). Go and inspect elements on your own, and don't forget to resize.
 
-###1. Smartphones
+**Smartphones**
 
 Columns are defined with `.sm-*` classes.
 These columns are not conditioned by any media-query and they will be displayed as default layout.
@@ -24,7 +24,7 @@ These columns are not conditioned by any media-query and they will be displayed 
 Why is there no such thing as media-query?
 This is mobile-first and we will take this decision as an real advantage.
 
-###2. Tablets
+**Tablets**
 
 For tablets there is a media-query.
 So on screens that are wider than 640px, grid starts to display `.md-*` columns.
@@ -33,13 +33,13 @@ But if you don't specify the tablet columns, the grid will still use the smartph
 So use tablet columns in the cases, when you want reshape default smartphone layout.
 
 
-###3. Gutters
+**Gutters**
 
 You can activate gutters by adding a `.gutters` class to <body> element or to specific `<div>` which represents one row.
 
 Furthermore you can add `.gutter` or `.no-gutter` classes to just one column in the case you would like to gutters just for certain columns, or vice versa.  
 
-###4. Offsets
+**Offsets**
 
 If you need to create some whitespace in the grid, you can just add `sm-offset-*` or `md-offset-*` classes to the column, needs to have a free space on the left side.
 
